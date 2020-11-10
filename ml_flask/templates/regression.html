@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Regression Predictions Below.</h3>
+
+{{ data | safe }}
+
+<form method="POST">
+    <p>CRIM: <input type = 'num' name = 'crim' /></p>
+    <p>ZN: <input type = 'num' name = 'zn' /></p>
+    <p>RM: <input type = 'num' name = 'rm' /></p>
+    <input type = 'submit' />
+</form>
+{% endblock %}
